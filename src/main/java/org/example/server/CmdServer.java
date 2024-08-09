@@ -1,7 +1,6 @@
 package org.example.server;
 
 import org.example.remoteInterface.DangeriousFunc1;
-
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
@@ -30,6 +29,6 @@ public class CmdServer extends UnicastRemoteObject implements DangeriousFunc1 {
     public static void main(String[] args) throws RemoteException, MalformedURLException {
         CmdServer cmdServer = new CmdServer();
         String host = "rmi://127.0.0.1:1099/";
-        Naming.rebind(host+"Hello", cmdServer);
+        Naming.rebind(host+"Cmd", cmdServer);
     }
 }

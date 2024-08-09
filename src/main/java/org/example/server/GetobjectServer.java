@@ -8,8 +8,8 @@ import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
-public class getobjectServer extends UnicastRemoteObject implements DangeriousFunc2 {
-    protected getobjectServer() throws RemoteException {
+public class GetobjectServer extends UnicastRemoteObject implements DangeriousFunc2 {
+    protected GetobjectServer() throws RemoteException {
     }
 
     @Override
@@ -17,8 +17,8 @@ public class getobjectServer extends UnicastRemoteObject implements DangeriousFu
         return CC1.getObject();
     }
     public static void main(String[] args) throws RemoteException, MalformedURLException {
-        CmdServer cmdServer = new CmdServer();
+        GetobjectServer getobjectServer = new GetobjectServer();
         String host = "rmi://127.0.0.1:1099/";
-        Naming.rebind(host+"Hello", cmdServer);
+        Naming.rebind(host+"getobjectServer", getobjectServer);
     }
 }
