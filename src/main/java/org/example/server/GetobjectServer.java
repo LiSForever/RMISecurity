@@ -3,6 +3,7 @@ package org.example.server;
 import org.example.payload.CC1;
 import org.example.remoteInterface.DangeriousFunc2;
 
+import java.lang.reflect.InvocationTargetException;
 import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
@@ -13,7 +14,7 @@ public class GetobjectServer extends UnicastRemoteObject implements DangeriousFu
     }
 
     @Override
-    public Object getAnytypeParams(Object obj) throws RemoteException {
+    public Object getAnytypeParams(Object obj) throws RemoteException, ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
         return CC1.getObject();
     }
     public static void main(String[] args) throws RemoteException, MalformedURLException {

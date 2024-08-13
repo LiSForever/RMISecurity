@@ -14,12 +14,17 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-<!--    <dependencies>-->
+    <dependencies>
 <!--        <dependency>-->
 <!--            <groupId>commons-net</groupId>-->
 <!--            <artifactId>commons-net</artifactId>-->
 <!--            <version>3.8.0</version>-->
 <!--        </dependency>-->
-<!--    </dependencies>-->
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.1</version>
+        </dependency>
+    </dependencies>
 
 </project>
