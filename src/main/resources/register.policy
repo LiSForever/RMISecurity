@@ -1,0 +1,7 @@
+grant {
+    // 允许所有主机连接到 RMI 注册表
+    permission java.net.SocketPermission "*:1099", "accept,connect,resolve";
+
+    // 允许反射访问
+    permission java.lang.reflect.ReflectPermission "suppressAccessChecks";
+};
