@@ -28,7 +28,7 @@ public class CmdServer extends UnicastRemoteObject implements DangeriousFunc1 {
 
     public static void main(String[] args) throws RemoteException, MalformedURLException {
         CmdServer cmdServer = new CmdServer();
-        String host = "rmi://192.168.110.146:1099/";
+        String host = "rmi://127.0.0.1:1099/";
         Naming.rebind(host+"Cmd", cmdServer);
     }
 }
