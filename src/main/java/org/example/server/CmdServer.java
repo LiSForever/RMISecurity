@@ -1,6 +1,6 @@
 package org.example.server;
 
-import org.example.remoteInterface.DangeriousFunc1;
+import org.example.remoteInterface.Exec;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
@@ -8,7 +8,7 @@ import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
-public class CmdServer extends UnicastRemoteObject implements DangeriousFunc1 {
+public class CmdServer extends UnicastRemoteObject implements Exec {
     protected CmdServer() throws RemoteException {
     }
 

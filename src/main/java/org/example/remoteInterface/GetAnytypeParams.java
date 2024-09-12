@@ -4,6 +4,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
-public interface DangeriousFunc2 extends Remote {
+public interface GetAnytypeParams extends Remote {
     public Object getAnytypeParams(Object obj) throws RemoteException, ClassNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException;
 }
