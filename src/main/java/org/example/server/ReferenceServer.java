@@ -10,7 +10,7 @@ import java.rmi.registry.Registry;
 
 public class ReferenceServer {
     public static void main(String[] args) throws RemoteException, AlreadyBoundException, NamingException {
-        String url = "http://192.168.110.80:8000/";
+        String url = "http://192.168.110.226:8000/";
         Registry registry = LocateRegistry.createRegistry(1099);
         Reference reference = new Reference("Test", "Test", url);
         ReferenceWrapper referenceWrapper = new ReferenceWrapper(reference);
